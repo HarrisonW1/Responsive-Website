@@ -1,0 +1,125 @@
+body {
+    font-family: fantasy;
+    font-size: 20px;
+    margin: 0;
+    background-color: midnightblue;
+}
+
+.header {
+    height: 30rem;
+    padding-top: 1rem;
+    background-image: url("../images/nasa-vltMzn0jqsA-unsplash.jpg");
+    background-position: center;
+    background-repeat: none;
+}
+
+.intro img {
+    width: 15rem;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.header h1 {
+    color: silver;
+    font-size: 6rem;
+    margin-top: 10rem;
+    padding: 2rem;
+    background-color: rgba(209, 45, 45, 0.5);
+    text-align: center;
+}
+
+img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.description,
+.pic,
+.advice,
+.closing {
+    margin: 4em auto;
+    text-align: center;
+}
+
+.description {
+    padding: 0 1rem;
+}
+
+.description h2 {
+    color: mediumvioletred;
+}
+
+.description p {
+    color: white;
+}
+
+.advice {
+    background-color: skyblue;
+    height: 15rem;
+    padding: 0 1rem;
+    padding-top: 1rem;
+    color: saddlebrown;
+}
+
+.advice h1 {
+    font-size: 2.5rem;
+    color: saddlebrown;
+}
+
+/* Added 'height vw' and 'object-fit: cover' to  zoom instead of image stretching. */
+.pic img {
+    max-width: 80%;
+    height: 45vw;
+    margin: 1.5%;
+    object-fit: cover;
+}
+
+.closing {
+    margin-bottom: 2rem;
+}
+
+.closing h1 {
+    color: orange;
+    text-align: center;
+}
+
+.closing h2 {
+    color: seagreen;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1048px) {
+    .pic img {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .header h1 {
+        margin-top: 2rem;
+    }
+
+    .description {
+        max-height: 100%;
+    }
+
+    .pic img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .advice h1 {
+        font-size: 2rem;
+    }
+
+    .pic img {
+        width: 100%;
+    }
+}
